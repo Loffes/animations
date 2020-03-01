@@ -8,7 +8,7 @@ end)
 ESX['RegisterServerCallback']('loffe_animations:get_favorites', function(source, cb)
     local xPlayer = ESX['GetPlayerFromId'](source)
 
-    MySQL['Async']['fetchScalar']("SELECT animations FROM users WHERE identifier=@identifier", {['identifier'] = xPlayer['identifier']}, function(result)
+    MySQL['Async']['fetchScalar']("SELECT animations FROM users WHERE identifier=@identifier", {['@identifier'] = xPlayer['identifier']}, function(result)
         if not result then
             MySQL['Async']['execute']([[
                 UPDATE `users` SET animations=@animations WHERE identifier=@identifier
@@ -54,7 +54,7 @@ AddEventHandler('loffe_animations:requestSynced', function(target, id)
     local requester = source
     local xPlayer = ESX['GetPlayerFromId'](requester)
     
-    MySQL['Async']['fetchScalar']("SELECT firstname FROM users WHERE identifier=@identifier", {['identifier'] = xPlayer['identifier']}, function(firstname)
+    MySQL['Async']['fetchScalar']("SELECT firstname FROM users WHERE identifier=@identifier", {['@identifier'] = xPlayer['identifier']}, function(firstname)
         TriggerClientEvent('loffe_animations:syncRequest', target, requester, id, firstname)
     end)
 end)
