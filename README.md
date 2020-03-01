@@ -8,3 +8,5 @@ What's different?
 
 # loffe_animations_migrate
 To use "loffe_animations" with your "esx_animations" config you need to use "loffe_animations_migrate". Here's a [video explaining it](https://streamable.com/7zk23).
+
+Contact me on discord @Loffe#4663 for any issues, I don't usually check up on the GitHub page for errors / issues.
