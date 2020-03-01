@@ -1,5 +1,5 @@
 # loffe_animations
-Animations script for FiveM using ESX. [Showcase](https://streamable.com/oycxm)
+Animations script for FiveM using ESX. [Showcase](https://streamable.com/oycxm).
 
 What's different? 
 * This has synced animations, you can do those with other players.
