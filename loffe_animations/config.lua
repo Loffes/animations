@@ -1,5 +1,5 @@
 Config = {}
-Config['Debug'] = true -- if this is enabled, synced animations will just spawn an npc that will do the animation with you
+Config['Debug'] = false -- if this is enabled, synced animations will just spawn an npc that will do the animation with you
 
 Config['pNotify'] = true -- use pNotify for notifications?
 
