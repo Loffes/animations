@@ -1,0 +1,2 @@
+-- simply paste your old esx_animations config, run the script, go to "loffe_animations_migrate" folder in your server folder, 
+-- copy the result and just paste it in "loffe_animations" -> config.lua (tutorial https://streamable.com/7zk23)
