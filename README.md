@@ -2,6 +2,7 @@
 What's different? 
 * This has synced animations, you can do those with other players.
 * This also has quick bind animations (assign for example "Z" to play an animation).
+* This also contains the ability to pole dance at vanilla unicorn. [GIF](https://gyazo.com/49bd32194aa4fb53c673868550057b63).
 
 Animations script for FiveM using ESX. [Showcase](https://streamable.com/oycxm)
 
