@@ -106,7 +106,7 @@ AddEventHandler('loffe_animations:openMenu', function()
                 if allowed then
                     if not Config['Debug'] then
                         local allowed = false
-                        local distance, closest
+                        local distance, closest = 999.0, nil -- some stupid error comparing nil with number....
         
                         for k, v in pairs(GetActivePlayers()) do
                             src = GetPlayerServerId(v)
