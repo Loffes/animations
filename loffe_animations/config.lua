@@ -1,5 +1,5 @@
 Config = {}
-Config['Debug'] = false -- if this is enabled, synced animations will just spawn an npc that will do the animation with you
+Config['Debug'] = true -- if this is enabled, synced animations will just spawn an npc that will do the animation with you
 
 Config['pNotify'] = true -- use pNotify for notifications?
 
@@ -54,6 +54,25 @@ Config['Synced'] = {
                 ['xP'] = 0.05,
                 ['yP'] = 1.15,
                 ['zP'] = -0.05,
+
+                ['xR'] = 0.0,
+                ['yR'] = 0.0,
+                ['zR'] = 180.0,
+            }
+        }
+    },
+    {
+        ['Label'] = 'Kiss',
+        ['RequesterLabel'] = 'kiss',
+        ['Requester'] = {
+            ['Type'] = 'animation', ['Dict'] = 'hs3_ext-20', ['Anim'] = 'cs_lestercrest_3_dual-20', ['Flags'] = 0,
+        },
+        ['Accepter'] = {
+            ['Type'] = 'animation', ['Dict'] = 'hs3_ext-20', ['Anim'] = 'csb_georginacheng_dual-20', ['Flags'] = 0, ['Attach'] = {
+                ['Bone'] = 0,
+                ['xP'] = 0.0,
+                ['yP'] = 0.53,
+                ['zP'] = 0.0,
 
                 ['xR'] = 0.0,
                 ['yR'] = 0.0,
@@ -251,6 +270,13 @@ Config['Synced'] = {
 }
 
 Config['Animations'] = {
+    -- {
+    --     ['Label'] = 'test',
+    --     ['Data'] = {
+    --         {['Label'] = "hug", ['Type'] = 'animation', ['Dict'] = 'fos_ep_2_p1-0', ['Anim'] = 'a_m_y_salton_01_dual-0', ['Flags'] = 0},
+    --         {['Label'] = "hug 2", ['Type'] = 'animation', ['Dict'] = 'fos_ep_2_p1-0', ['Anim'] = 'a_m_y_salton_01_dual-0', ['Flags'] = 0},
+    --     }
+    -- },
     {
     
         ['Label'] = 'Festive',
